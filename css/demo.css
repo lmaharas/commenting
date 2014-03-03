@@ -1,0 +1,316 @@
+/*
+ * Commenting Styles
+ * @author: Lynn Maharas
+ */
+ 
+/* 
+ * Default
+ */
+body {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+	background: #2D3538;
+	color: #f3f3f3; 
+	margin: 0;
+	padding: 0;
+}
+
+/* Media Block */
+.media-block {margin:10px;}
+/* .media-block, .media-block .content {overflow:hidden; _overflow:visible; zoom:1;} */
+.media-block, .media-block .content {overflow:visible; _overflow:visible; zoom:1;}
+.media-block .media-l {float:left; margin-right: 10px;}
+.media-block .media-r {float:right; margin-left: 10px;}
+.media-block .media img{display:block;}
+
+
+/* Application Basics */
+#application {
+	padding: 25px;
+	margin-top: 120px;
+}
+
+.notification,
+.update {
+	display: none;
+	width: 350px;
+	text-align: left;
+	margin: 0;
+	font-size: 0.8em;
+}
+
+.notification {
+	color: #D56868; /* red */
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	font-style: italic;
+	margin: 0 auto 4px;
+	line-height: 20px;
+	vertical-align: top;
+	margin-top: 4px;
+}
+
+.notification .icon-warning {
+	font-size: 20px;
+	margin-right: 6px;
+}
+
+.update {
+	text-align: right;
+	color: #5FCF80;	/* green */
+	margin-top: 6px;
+}
+
+/* Header */
+.header {
+	position: fixed;
+	background-color: rgba(20, 22, 22, .6);
+	padding: 2em 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.page-title {
+	font-size: 32px;
+	text-align: center;
+	margin: 0;
+}
+
+/* Nav */
+.nav {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.nav .button {
+	color: #337146;
+	color: rgba(0, 0, 0, .45);
+	display: inline-block;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgba(95, 207, 128, 1);
+	padding: 20px;
+	width: 30%	;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	    -ms-border-radius: 5px;
+	     -o-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-box-shadow: 0 4px 0 0 #337146;
+	   -moz-box-shadow: 0 4px 0 0 #337146;
+	        box-shadow: 0 4px 0 0 #337146;
+}
+
+.nav .button:hover {
+	color: #224628;
+	color: rgba(0, 0, 0, .45);
+	background-color: rgba(67, 133, 78, 1);
+	-webkit-box-shadow: 0 4px 0 #224628;
+	   -moz-box-shadow: 0 4px 0 #224628;
+	        box-shadow: 0 4px 0 #224628;
+}
+
+.body {
+	margin-top: 80px;
+	text-align: center;
+}
+
+/*
+ * Comment List
+ */
+.commentlist {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	-webkit-transition: all 500ms ease;
+       -moz-transition: all 500ms ease;
+         -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+}
+
+
+/*
+ * Comment
+ */
+.comment, 
+.commentform {
+	background-color: rgba(20, 22, 22, .6);
+	border: 2px solid #cbcbc;
+	max-width: 400px;
+	min-height: 50px;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	    -ms-border-radius: 10px;
+	     -o-border-radius: 10px;
+	        border-radius: 10px;
+}
+
+.comment {
+	display: block !important; /* TODO:Find a better alt to override inline styles applied when form is created. */
+	margin: 0 auto 10px;
+	color: #fff;
+}
+
+.comment .media-block {
+	padding: 25px;
+	margin: 0;
+}
+
+.comment .btns {
+	margin: -18px -18px 0 0;
+}
+	
+.comment .byline,
+.comment .text {
+	margin: 0;
+	text-align: left;
+	word-wrap: break-word;
+}
+
+.comment .byline {
+	font-style: italic;
+	margin-bottom: 4px;
+	font-size: 0.875rem;
+	font-weight: normal;
+}
+
+.comment .text {
+	padding-top: 4px;
+}
+
+/* comment/commentform buttons */
+.comment .btns button {
+	color: #ccc;
+	color: rgba(255, 255, 255, .45);
+	background-color: #1D2223;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	padding: 2px;
+	cursor: pointer;
+	border: none;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	    -ms-border-radius: 5px;
+	     -o-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.comment .btns button:hover {
+	color: #2D3538;
+	background-color: #ccc;
+}
+
+.comment .btns button .icon {
+	font-size: 26px;
+}
+
+.comment .btns-submit-cancel,
+.comment .btns-yes-no {
+	margin: 10px 0;
+}
+
+.comment .btns-yes-no,
+.commentform .btns-yes-no {
+	display: none;
+}
+
+.comment .btns-submit-cancel button,
+.comment .btns-yes-no button,
+.commentform .btns-submit-cancel button,
+.commentform .btns-yes-no button {
+	color: #CCC;
+	background-color: rgba(0, 0, 0, .30);
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	padding: 6px 10px;
+	cursor: pointer;
+	border: none;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	    -ms-border-radius: 5px;
+	     -o-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.comment .btns-submit-cancel button:hover,
+.comment .btns-yes-no button:hover,
+.commentform .btns-submit-cancel button:hover,
+.commentform .btns-yes-no button:hover {
+	color: #ccc;
+	background-color: #2D3538;
+}
+
+
+/*
+ * Comment Form
+ */
+.commentform {
+	padding: 15px;
+	margin: 20px auto 40px auto;
+}
+
+.commentform .title {
+	margin: 0 0 8px 0;
+}
+
+.commentform textarea, .commentform input {
+	width: 350px;
+}
+
+.commentform .author,
+.commentform .text {
+	margin-bottom: 4px;
+	padding: 10px;
+	border: none;
+	font-size: 15px;
+	color: #1D2223;
+	background-color: #f3f3f3;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	    -ms-border-radius: 4px;
+	     -o-border-radius: 4px;
+	        border-radius: 4px;
+}
+
+/* New Comment */
+.create-comment {
+	background-color: #1D2223;
+	background-color: rgba(95, 207, 128, 1);
+}
+
+.create-comment .title {
+	color: #337146;
+	color: rgba(0, 0, 0, .45);
+}
+
+/* Edit Comment */
+.edit-comment {	
+	color: rgba(20, 22, 22, .6);
+	background-color: #CCC;
+	margin-top: 0;
+	-webkit-border-radius: 0 0 10px 10px;
+	   -moz-border-radius: 0 0 10px 10px;
+	    -ms-border-radius: 0 0 10px 10px;
+	     -o-border-radius: 0 0 10px 10px;
+	        border-radius: 0 0 10px 10px;
+}

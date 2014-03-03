@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Comments - Lynn Maharas</title>
+		
+		<link rel="shortcut icon" href="static/img/chat.ico" />
+		
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/gawker-icon-font.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+		
+		<!-- Load JS Libraries -->
+		<script type="text/javascript" data-main="js/main" src="lib/require.js"></script>
+		
+		<!-- Embedded templates -->
+		<script type="text/jquery-x-template" id="comment-template">
+			<div class="media-block">
+				<div class="media-r btns">
+					<button class="reverse"><span class="icon icon-reverse-text"></button>
+					<button class="edit"><span class="icon icon-pencil2"></button>
+					<button class="delete"><span class="icon icon-cross"></button>
+				</div>
+				<div class="content">
+					<p class="byline" rel="author">{{author}}</p>
+					<p class="text">{{{text}}}</p>
+					<p class="update"><span class="icon icon-checkmark"></p>
+				</div>
+			</div>
+
+		</script>
+		<script type="text/jquery-x-template" id="form-template">
+			<h3 class="title">Edit Comment</h3>
+			<form>
+				<input type="text" name="author" value="{{author}}" placeholder="Name" class="author" /><br />
+				<textarea name="text" placeholder="Comment..." class="text">{{text}}</textarea>
+				<p class="notification"></p>
+				<div class="btns-submit-cancel">
+					<button class="submit"> Submit </button>
+					<button class="cancel"> Cancel </button>
+				</div>
+				<div class="btns-yes-no">
+					<button class="yes">Fo Sho!</button>
+					<button class="no">Nope</button>
+				</div>
+			</form>
+		</script>
+		
+	</head>
+	<body>
+		<!-- Application container element -->
+		<section id="application">
+			<header class="header">
+				<h1 class="page-title">Create Comments</h1>				
+				<nav class="nav">
+					<a href="#" class="newcomment button">New comment</a>
+					<a href="#" class="randomcomment button">Random comments</a>
+				</nav>
+			</header>
+			<section class="body">
+				<ul class="commentlist"></ul>
+			</section>
+		</section>
+	</body>
+</html>
